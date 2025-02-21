@@ -5,6 +5,7 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
+    render :template => "places/new"
   end
 
   def create
