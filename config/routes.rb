@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get("/places/new", { :controller => "places", :action => "new"})
   post("/places", { :controller => "places", :action => "create" })
   get("places/:place_id/entries", { :controller => "entries", :action =>"index"})
+  get("/places/:place_id/entries/new", { :controller => "entries", :action => "new" })
   get("/places/:place_id/entries/:id", { :controller =>"entries", :action =>"show"})
+ 
 
 end
